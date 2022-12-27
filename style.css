@@ -1,0 +1,1136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+:root {
+    --c12: #000;
+    --c11: #111;
+    --c10: #2E2E2E;
+    --c9: #404040;
+    --c8: #595959;
+    --c7: #717171;
+    --c6: #9C9C9C;
+    --c5: #B2B2B2;
+    --c4: #CCC;
+    --c3: #DEDEDE;
+    --c2: #EDEDED;
+    --c1: #F7F7F7;
+    --w: #FFF;
+    --p5: #332200;
+    --p4: #664400;
+    --p3: #A66F00;
+    --p2: #E4A30B;
+    --p1: #FFBB00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: var(--c12);
+}
+
+
+.header-container {
+    width: 1200px;
+    height: 96px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container img {
+    margin-top: 32px;
+}
+
+.header-container nav ul {
+    list-style: none;
+    line-height: 96px;
+    color: var(--w);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    gap: 40px;
+}
+
+.header-container nav ul li {
+    display: inline;
+}
+
+.menu-ativo {
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+
+.main-titulo {
+    background-color: var(--c11);
+}
+
+.main-titulo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--c5);
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.main-titulo h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);        
+}
+
+.main-titulo .h1-termos {
+    padding-bottom: 60px;
+}
+
+.main-titulo h1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.main-container {
+    width: 1200px;
+    margin: auto;
+}
+
+.main-conteudo {
+    width: 1200px;
+    margin: auto;
+    margin-top: 124px;
+    margin-bottom: 100px;
+}
+
+.main-conteudo-container {
+    width: 760px;
+}
+
+.main-conteudo h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--c11);
+    margin-top: 48px;
+}
+
+.main-conteudo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c10);
+    margin-top: 20px;    
+}
+
+footer {
+    background-color: var(--c12);
+    padding-top: 80px;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 24% 38% 38%;
+}
+
+footer h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--w);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+footer ul {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--c5);
+}
+
+footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--c6);
+    margin-top: 80px;
+    padding-bottom: 32px;
+}
+
+.footer-contato hr {
+    width: 360px;
+    border-color: var(--c11);
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+footer img {
+    margin-right: 32px;
+}
+
+/*INDEX*/
+
+.titulo-index-grid {  
+    margin-bottom: 100px;
+}
+
+.container-index-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;  
+    max-width: 1200px;   
+    box-sizing: border-box;
+}
+
+.container-index-grid h1 {
+    margin-top: 150px;    
+}
+
+.container-index-grid h1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.container-index-grid p {
+    text-transform: none;
+    margin-bottom: 50px;
+}
+
+.container-index-grid .botao {
+    margin-bottom: 80px;
+}
+
+.container-index-imagem {
+    margin-bottom: -80px;
+}
+
+.container-index-grid img {
+    height: 100%;        
+}
+
+.botao {
+    color: var(--p5);
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 18px;    
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A50C 100%);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 16px, 32px;
+    width: 217px;
+    height: 56px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.index-escolhaasua {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 32px;
+    color: var(--c11);       
+}
+
+.index-escolhaasua h2 {
+    padding-bottom: 50px; 
+    margin-left: 350px;
+}
+
+.index-escolhaasua h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.index-3bicicletas { 
+    padding-top: 100px;
+    padding-bottom: 120px;
+    margin-bottom: 100px;
+}
+
+.index-3bicicletas ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+article ul li h3 {
+    margin-top: 20px; 
+    margin-bottom: 20px;       
+}
+
+article ul li h3::before {
+    content: "-";    
+    color: var(--p1);
+    margin-right: 10px;
+}
+
+article ul li p {
+    margin-left: 30px;
+}
+
+.tec-avan { /*tec-bg*/
+    background-color: var(--c11);  
+    margin-bottom: 100px; 
+    display: flex;
+    justify-content: center; 
+}
+
+.tec-avan-container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tec-avan h1 {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;         
+    text-transform: uppercase;
+    color: var(--c5);
+}
+
+.tec-avan .p1 {
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+}
+
+.tec-avan .p2 {    
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--c5);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.tec-avan a {
+    color: var(--p1);
+    text-transform: uppercase;
+    text-decoration: underline 2px;           
+}
+
+.tec-avan .p1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.tec-avan h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--w);
+}
+
+.tec-avan .p3 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--c5);
+    margin-top: 8px;
+}
+
+.tec-avan-imagem img {
+    width: 100%;    
+    margin-top: -80px;
+    margin-bottom: -80px;    
+}
+
+.tec-conteudo {
+    padding-top: 20px;   
+    justify-content: center; 
+}
+
+.tec-conteudo a {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 24px;    
+    color:var(--p1);    
+}
+
+.tec-conteudo2 {
+    display: flex;
+    gap: 40px;
+}
+
+.tec-conteudo2 img {
+    padding-top: 40px;
+}
+
+.parceiros {
+    padding-top: 60px;
+    padding-bottom: 120px;     
+}
+
+.parceiros h1 {
+    margin-left: 350px;  
+    margin-bottom: 60px;
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--c11);    
+}
+
+.parceiros h1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.parceiros ul {
+    max-width: 1400px;
+    margin: auto;  
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.parceiros li {
+    padding: 30px;    
+}
+
+.depoimento {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--p1);
+}
+
+.depoimento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.depoimento .texto {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--p5);           
+}
+
+.depoimento .texto::after {
+    content: '"';
+    font-size: 50px;
+    color: var(--p3);
+}
+
+.depoimento .texto::before {
+    content: '"';
+    font-size: 50px;
+    color: var(--p3);
+}
+
+.depoimento .nome {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--p4);
+    padding-top: 30px;
+}
+
+.depoimento .conteudo {
+    padding: 250px;
+    align-self: end;
+}
+
+.seguros {
+    background-color: var(--c11);    
+}
+
+.seguros-container {
+    width: 1200px;
+    padding-left: 350px;
+}
+
+.seguros-conteudo {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);    
+}
+
+.seguros-container h1 {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.seguros-container h1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.seguros-container h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--c6);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.seguros-container .ouro {
+    color: var(--p1);
+}
+
+.seguros-container li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--w);
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.seguros-container li::before {
+    content: "✓";
+    color: var(--p1);
+    padding-right: 5px;
+}
+
+.seguros-conteudo p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--w) 
+}
+
+.seguros-conteudo sup {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--c6);
+    padding-left: 60px;
+}
+
+/*BICICLETAS*/
+
+.main-titulo .h1-bicicletas {
+    padding-bottom: 60px;
+}
+
+.bicicletas-fundo {
+    background-color: var(--c11);
+    box-shadow: inset 550px 0px white;
+}
+
+.bicicletas {
+    width: 1200px;
+    margin: auto;
+}
+
+.bicicletas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 0px 60px 0px ;
+}
+
+.imagem {
+    position: relative;
+}
+
+.preco {
+    background-color: var(--c12);
+    display: inline-block;
+    padding: 8px 16px 8px 8px;
+    position: absolute;
+    top: 20px;
+    left: 482px;
+    color: var(--w);
+    border-radius: 3px;    
+}
+
+.bicicletas .conteudo h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--c11);
+    margin-bottom: 20px;
+}
+
+.bicicletas .conteudo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c8);
+    margin-bottom: 20px;
+}
+
+.bicicletas .conteudo .magic {
+    color: var(--w);
+}
+
+.bicicletas .conteudo img {
+    margin-right: 10px;
+}
+
+.bicicletas .conteudo li {
+    list-style: none;    
+}
+
+.listabotao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listabotao a {
+    margin-top: 100px;    
+}
+
+/*SEGUROS*/
+
+.seguros {
+    padding-bottom: 100px;
+}
+
+.seguros-fundo h1 {
+    padding-bottom: 100px;    
+}
+
+.vantagens-fundo h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.vantagens-fundo {
+    background-color: var(--c12);
+    padding: 100px;
+}
+
+.vantagens-fundo h2 {
+    padding-top: 100px;
+    padding-bottom: 50px;    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+}
+
+.vantagens-fundo h3 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--w);
+}
+
+.vantagens-fundo p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c6);
+}
+
+.vantagens-container {
+    width: 1200px;
+    margin: auto;
+}
+
+.vantagens-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 80px;
+}
+
+.vantagens-container h3 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.perguntas {
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 150px;
+}
+
+.perguntas h1 {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c11);
+}
+
+.perguntas p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c9);
+    margin-top: 10px;    
+}
+
+.perguntas h2 {
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px; 
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--c11);
+}
+
+.perguntas h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.perguntas h3 {
+    padding-top: 30px;
+}
+
+.perguntas h3::before {
+    content: "-";
+    font-size: 40px;
+    color: var(--p1);
+    margin-right: 5px;
+}
+
+/*BICICLETA-INTERNA*/
+
+.bicicletas2-fundo {
+    background-color: var(--c11);
+}
+
+.bicicletas2-container {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bicicletas2-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bicicletas2-imagens img {
+    flex: 1;
+    min-width: 200px;
+}
+
+.bicicletas2-imagens img:first-child {
+    min-width: 100%;
+}
+
+.bicicletas2-conteudo p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--c5);
+    padding-bottom: 20px;
+}
+
+.bicicletas-comprar {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--c6);
+    display: flex;
+}
+
+.bicicletas-comprar a {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.bicicletas-comprar img {
+    margin-right: 8px;
+}
+
+.informacoes {
+    padding-bottom: 10px;
+}
+
+.informacoes, .fichatecnica {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: var(--w);
+}
+
+.informacoes-bicicleta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.informacoes-bicicleta h3 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--w);
+}
+
+.informacoes-bicicleta p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--c5);
+}
+
+.fichatecnica {
+    padding-bottom: 20px;
+}
+
+.fichatecnica-bicicleta {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: var(--c4);
+    list-style: none;
+    margin-left: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.fichatecnica-bicicleta span {
+    color: var(--c6);    
+}
+
+.fichatecnica-bicicleta li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-escolhaasua2 {
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 200px;
+}
+.bicicletas-escolhaasua2 {   
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px; 
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--c11);    
+}
+    
+.bicicletas-escolhaasua2 h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.container-escolhaasua2 ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+.seguro-fundo {
+    background-color: var(--c10);    
+}
+
+.seguro-container {
+    width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.seguro-imagem {
+    margin-top: -100px;    
+}
+
+.seguro-conteudo h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.seguro-conteudo p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--c5);
+    padding-right: 150px;
+    margin-bottom: 30px;
+}
+
+/*CONTATO*/
+
+#contato {
+    background-color: var(--w);
+}
+
+#contato .main-container {
+    padding-bottom: 300px;
+}
+
+.contato-container { /*contato*/
+    width: 1200px;
+    margin: auto;    
+    display: grid;
+    grid-template-columns: 5fr 7fr;  
+    margin-top: -200px;  
+    margin-bottom: 150px;
+}
+
+.dados, .formulario {
+    padding: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);    
+}
+
+.dados {
+    background-color: var(--c12);    
+}
+
+.dados h2 {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--w);
+    margin-bottom: 50px;
+}
+
+.formulario {
+    background-color: var(--w);
+}
+
+.endereco, .contato-meios {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--c4);
+}
+
+.endereco {
+    margin-bottom: 30px;
+}
+
+.contato-meios {
+    margin-bottom: 60px;
+}
+
+address .tel {
+    margin-top: 30px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;    
+}
+
+.form label {
+    display: block;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--c11);
+    margin-bottom: 5px;
+}
+
+.form input {
+    border: none;
+    padding: 10px;
+}
+
+.form textarea {
+    border: none;   
+    margin-bottom: 80px; 
+}
+
+.areatexto {
+    grid-column: span 2;
+}
+
+.lojas {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.lojalocal h2 {
+    margin-left: 350px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--c11);
+    margin-bottom: 50px;
+}
+
+.lojalocal h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.end-loja-rj, .end-loja-sp {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.end-loja-rj h3, .end-loja-sp h3 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;  
+    padding-bottom: 20px;  
+    padding-top: 20px;
+}
+
+.horario {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/*ORÇAMENTO*/
+
+.formulario-orcamento-container {
+    width: 800px;
+    margin: auto;
+    margin-top: -250px;    
+}
+
+.formulario-orcamento {
+    background-color: var(--w);
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.formulario-orcamento input {
+    border: none;
+    margin-top: 50px;
+}
+
+.formulario-orcamento h2, label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: var(--c9);
+}
+
+.formulario-orcamento h2 {
+    text-transform: uppercase;
+    margin-top: 100px;
+    
+}
+
+.nome-sobrenome, .cep-num, .rua-bairro, .cdd-estado {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.formulario-orcamento span {
+    text-decoration: underline;    
+}
+
+.formulario-orcamento .botao {
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.orcamento-geral .h1-termos {
+    padding-bottom: 300px;
+}
